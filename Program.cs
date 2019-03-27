@@ -4,32 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication290
+namespace ConsoleApplication303
 {
-    class add
-    {
-        public add(int a,int b)
-        {
-            Console.WriteLine("Sum  :  "+(a+b));
-        }
-        public add(int a, int b, int c)
-        {
-            Console.WriteLine("Sum  :  " + (a + b + c));
-        }
-        public add(int a, int b, int q,int w)
-        {
-            Console.WriteLine("Sum  :  " + (a + b + q + w));
-        }
-        public add(double a=0, double b=0,double q=0,double w=0)
-        {
-            Console.WriteLine("Sum  :  " + (a + b + q+w));
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            add obj = new add(95.89,3.99);
+            Console.WriteLine("Enter Your Text");
+            string text = Console.ReadLine();
+
+            int len = text.Length;
+
+            string [] data= new string [len];
+
+
+            for (int i = 0; i < text.Length; i++)
+            {
+                data[i] = Convert.ToString(text[i]);
+            }
+            string inc = "";
+            for (int i = 0; i < data.Length; i++)
+            {
+                Console.WriteLine(inc+"* "+data[i]);
+                inc += "*";
+            }
         }
     }
 }
