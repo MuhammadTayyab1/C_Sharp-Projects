@@ -14,9 +14,10 @@ namespace myprogram
             int w = Convert.ToInt32(Console.ReadLine());
 
 
+            // initilize multidimentinal array
             string[,] record = new string[w, 4];
 
-
+            // Get data from user
             for (int i = 0; i < record.GetLength(0); i++)
             {
                 Console.WriteLine("Enter name : ");
@@ -32,9 +33,12 @@ namespace myprogram
                 record[i, 3] = "Adress  : " + Console.ReadLine();
                 Console.WriteLine("");
             }
+            
+            // use for clear console screen 
             Console.Clear();
 
 
+            // Write data on screen
             for (int i = 0; i < record.GetLength(0); i++)
             {
                 for (int j = 0; j < record.GetLength(1); j++)
