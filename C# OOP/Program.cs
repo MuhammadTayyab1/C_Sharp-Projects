@@ -1,74 +1,62 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication310
+namespace ConsoleApplication
 {
-    class human
-    {
-        string firstname;
-        string lastname;
+   class game
+   {
+       static int count;
+       public game(int n)
+       {
+           Random r = new Random();
+           int ran = r.Next(1, 5);
 
-        public human(string fn, string ln)
-        {
-            firstname = fn;
-            lastname = ln;
-        }
-        public void dis()
-        {
-            Console.WriteLine("First Name     : "+firstname);
-            Console.WriteLine("Last Name      : "+lastname);
-        }
-
-    }
-    class student : human
-    {
-        string mark;
-
-        public student(string ma, string fn, string ln)
-            : base(fn, ln)
-        {
-            mark = ma;
-        }
-        public void display()
-        {
-            dis();
-            Console.WriteLine(mark);
-        }
-    }
-    class worker : human
-    {
-        int wages;
-        int hourwork;
-        int calcu;
-
-        public worker(int wa, int hou, string fn, string ln)
-            : base(fn, ln)
-        {
-            wages = wa;
-            hourwork = hou;
-            calcu = wages / (30 * hou);
-        }
-        public void display()
-        {
-            dis();
-            Console.WriteLine("Monthly Wage   : " + wages);
-            Console.WriteLine("Hours/day work : " + hourwork);
-            Console.WriteLine("per hour wage  : " + calcu);
-        }
-    }
-
+           if(ran==n)
+           {
+               count++;
+           }
+       }
+       public static void result()
+       {
+           if(count >= 3)
+           {
+               Console.WriteLine("You guess 3 or more You win ");
+           }
+           else
+           {
+               Console.WriteLine("You loss");
+           }
+       }
+   }
     class Program
     {
         static void Main(string[] args)
         {
+            game[] obj = new game[10];
 
-            worker obj = new worker(30000, 8, "ali", "raza");
-            obj.display();
+            for (int i = 0; i < obj.Length; i++)
+            {
+                Console.WriteLine("Enter number or type break to stop");
+                string userdata = Console.ReadLine();
+                if (userdata == "break")
+                {
+                    break;
+                }
+                else
+                {
+                    int user = Convert.ToInt32(userdata);
+                    obj[i] = new game(user);
+                }
+            }
 
+            game.result();
+           
         }
-
     }
 }
