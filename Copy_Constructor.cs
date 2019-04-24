@@ -37,11 +37,11 @@ namespace copycontrustor
     {
         static void Main(string[] args)
         {
-            // original
+            // object of original constructor
             data obj = new data("ali", 1234);
             obj.show();
 
-            // copy 
+            // object of copy constructor
             data copy = new data(obj);
             copy.show();
 
