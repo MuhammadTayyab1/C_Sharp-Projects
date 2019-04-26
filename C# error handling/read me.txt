@@ -1,2 +1,4 @@
 we use try , catch for error handling in C# 
 please read comments in code carefully
+Finally block:
+Finally always run either code have error or not
