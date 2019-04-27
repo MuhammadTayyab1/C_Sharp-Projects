@@ -28,6 +28,11 @@ namespace errorhandling
                 Console.WriteLine("Zero sa divide nahi karo");
                 Console.WriteLine("not try divide by zero");
             }
+            catch(IndexOutOfRangeException)
+            {
+                Console.WriteLine("Array ki range sahi karo");
+                Console.WriteLine("correct array range");
+            }
             catch(FormatException)
             {
                 Console.WriteLine("Sahi format ma data likho");
