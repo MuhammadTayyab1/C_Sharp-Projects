@@ -43,6 +43,12 @@ namespace errorhandling
                 Console.WriteLine("limit sa zayada data nahi enter karo");
                 Console.WriteLine("enter data within limit");
             }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine("Obj null ha");
+                Console.WriteLine("Obj is null");
+                Console.WriteLine(ex.Message);
+            }
             catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
