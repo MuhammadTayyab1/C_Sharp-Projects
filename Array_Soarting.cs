@@ -18,6 +18,7 @@ namespace myprogram
             {
                 store[i] = r.Next(1, 1000);
             }
+            
             Array.Sort(store);
 
             for (int i = 0; i < store.Length; i++)
