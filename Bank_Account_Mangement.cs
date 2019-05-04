@@ -36,6 +36,7 @@ namespace ConsoleApplication283
                 int tbal = int.Parse(Console.ReadLine());
                 if (tbal < 0)
                 {
+                    
                     continue;
                 }
                 else
