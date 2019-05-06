@@ -20,6 +20,7 @@ namespace game
             int y = 30;
             int total = 0;
 
+            
             for (; ; )
             {
                 y = 30;
