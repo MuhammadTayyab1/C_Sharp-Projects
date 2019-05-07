@@ -13,6 +13,7 @@ namespace myprogram
             Random r = new Random();
 
             int[] store = new int[10000];
+            
 
             for (int i = 0; i < store.Length; i++)
             {
