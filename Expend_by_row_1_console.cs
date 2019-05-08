@@ -12,6 +12,7 @@ namespace ConsoleApplication297
         {
             int[] a = new int[9]{1,2,3,4,5,6,7,8,9};
             int cout = 0;
+            
 
             Console.WriteLine("    " + a[0] + "    " + a[1] + "    " + a[2]);
             Console.WriteLine("");
