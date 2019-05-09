@@ -19,6 +19,7 @@ namespace ConsoleApplication297
             Console.WriteLine("    " + a[3] + "    " + a[4] + "    " + a[5]);
             Console.WriteLine("");
             Console.WriteLine("    " + a[6] + "    " + a[7] + "    " + a[8]);
+            
 
 
             for (int i = 0; i < 9; i++)
