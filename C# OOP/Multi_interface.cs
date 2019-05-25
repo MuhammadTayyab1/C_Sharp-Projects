@@ -9,6 +9,7 @@ namespace multi_interface
 
     // C# not support multiple inhertance 
     // but C# support multiple interface
+    
     interface A
     {
 
