@@ -23,7 +23,8 @@ namespace myprogram
             }
             
             Array.Sort(store);
-
+            
+            // loop for display data
             for (int i = 0; i < store.Length; i++)
             {
                 Console.WriteLine(store[i]);
