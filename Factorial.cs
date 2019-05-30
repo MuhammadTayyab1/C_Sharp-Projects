@@ -17,6 +17,7 @@ namespace ConsoleApplication291
                 num  *= i;
             }
             Console.WriteLine("Factorial of "+n+" is  =  "+num );
+            
         }
     }
 
@@ -27,7 +28,7 @@ namespace ConsoleApplication291
             Console.WriteLine("Enter number");
             int num = Convert.ToInt32(Console.ReadLine());
 
-
+            // object of factorial class
             factorial obj = new factorial(num);
         }
 
