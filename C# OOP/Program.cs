@@ -23,6 +23,7 @@ namespace ConsoleApplication310
             Console.WriteLine("=======================");
         }
     }
+    
     class liberay : book
     {
         string libname;
