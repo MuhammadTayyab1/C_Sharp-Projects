@@ -17,6 +17,7 @@ namespace myprogram
 
             for (int i = 0; i < fs.Length; i++)
             {
+                // (char) convert bytes into text
                 Console.Write((char)fs.ReadByte());
             }
 
