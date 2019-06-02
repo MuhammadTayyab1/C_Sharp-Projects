@@ -15,7 +15,7 @@ namespace game
             Random r2 = new Random();
             int bowls = 12;
 
-
+            // Random numbers
             int random2 = r2.Next(30, 50);
             int y = 30;
             int total = 0;
