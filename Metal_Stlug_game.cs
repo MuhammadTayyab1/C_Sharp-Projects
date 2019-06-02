@@ -15,6 +15,7 @@ namespace ConsoleApplication133
             Console.ReadLine();
             Console.Clear();
             int score = 0;
+            
             for (int i = 0; i < 10; i++)
             {
 
