@@ -29,7 +29,7 @@ namespace copycontrustor
         {
             Console.WriteLine("Name   : "+name);
             Console.WriteLine("Id     : "+id);
-            Console.WriteLine("--------------------------");
+            Console.WriteLine("------------------------------");
         }
     }
 
