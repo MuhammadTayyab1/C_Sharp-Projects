@@ -27,11 +27,13 @@ namespace all_in_one
 
             if (select==1)
             {
+                
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("press 1 for tea and 2 for coffie");
                 int order = Convert.ToInt32(Console.ReadLine());
                 string totalorder = "";
                 int price = 0;
+                
                 if (order == 1)
                 {
                     totalorder += "tea";
