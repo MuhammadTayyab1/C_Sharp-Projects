@@ -30,6 +30,7 @@ namespace myprogram
                     Console.WriteLine(check+" is store in array number  store["+i+"]");
                 }
             }
+            
 
 
         }
