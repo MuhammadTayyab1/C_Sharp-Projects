@@ -23,6 +23,7 @@ namespace myprogram
             }
             
             
+            
             Array.Sort(store);
             
             // loop for display data
