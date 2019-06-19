@@ -20,6 +20,7 @@ namespace myprogram
                 store[i] = r.Next(1, 100);
             }
 
+            
             Console.WriteLine("enter any number from 1 to 99");
             int check = Convert.ToInt32(Console.ReadLine());
 
