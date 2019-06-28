@@ -4,88 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication315
+namespace ConsoleApplication
 {
     class Program
     {
         static void Main(string[] args)
         {
+            // initilize array with length
+            int[] ok = new int[100];
 
+            // Ramdom numbers
+            Random r = new Random();
 
-            for (int j = 1; j <= 3; j++)
+            // Initilizing data in arrays
+            for (int i = 0; i < ok.Length; i++)
             {
-
-                Console.WriteLine("enter your data");
-                string save = Console.ReadLine();
-
-                int[] a = new int[save.Length];
-
-                for (int i = 0; i < a.Length; i++)
-                {
-                    a[i] = (int)save[i];
-                }
-
-                Console.WriteLine("for encript press 1 , deccipt press 2 , for both press 3 ");
-                int op = int.Parse(Console.ReadLine());
-
-                if (op == 1)
-                {
-
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        a[i]++;
-                    }
-
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        Console.Write((char)a[i]);
-                    }
-                    Console.ReadLine();
-                }
-                else if (op == 2)
-                {
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        a[i]--;
-                    }
-
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        Console.Write((char)a[i]);
-                    }
-                    Console.ReadLine();
-                }
-                else if (op == 3)
-                {
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        a[i]++;
-                    }
-
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        Console.Write((char)a[i]);
-                    }
-
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        a[i]--;
-                    }
-                    Console.WriteLine("\n\n");
-
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        a[i]--;
-                    }
-
-                    for (int i = 0; i < a.Length; i++)
-                    {
-                        Console.Write((char)a[i]);
-                    }
-                    Console.ReadLine();
-                }
+                ok[i] = r.Next(1, 100);
+                Console.WriteLine("Index = "+i+"       value = "+ok[i]);
             }
-            
+
+            // Sorting numeric data in array
+            Array.Sort(ok);
+            Console.WriteLine("After sorting");
+
+            // Display data after sorting
+            foreach (var item in ok)
+            {
+                Console.WriteLine("Index = " + item + "       value = " + ok[item]);
+            }
+
+
+
 
         }
     }
