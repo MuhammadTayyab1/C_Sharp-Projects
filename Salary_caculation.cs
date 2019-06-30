@@ -54,6 +54,7 @@ namespace myprogram
                 savings = (salary) - (tax + rent + expences);
             }
             Console.Clear();
+            // display data 
             Console.WriteLine("========================================");
             Console.WriteLine("Total Salary  Rs = "+salary);
             Console.WriteLine("Tax           Rs = "+tax);
