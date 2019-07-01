@@ -24,6 +24,7 @@ namespace ConsoleApplication302
                 int a = r.Next(20, 100);
                 save += (char)a;
             }
+            
             Console.WriteLine("Your password is :  "+save);
             Console.WriteLine("Enter file name in which you want store");
             string name = Console.ReadLine();
