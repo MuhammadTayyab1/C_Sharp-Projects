@@ -22,6 +22,7 @@ namespace myprogram
             
 
             
+            
             Console.WriteLine("enter any number from 1 to 99");
             int check = Convert.ToInt32(Console.ReadLine());
 
