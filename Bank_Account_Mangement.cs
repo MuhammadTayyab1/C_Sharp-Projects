@@ -15,6 +15,7 @@ namespace ConsoleApplication283
         public void  enterAccountData(out int an,out float bal)
         {
             an = 0;  bal = 0;
+            
             for (; ; )
             {
                 Console.WriteLine("Enter account number");
