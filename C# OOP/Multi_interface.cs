@@ -21,10 +21,12 @@ namespace multi_interface
         // it's by default create abstract functions
         void p1();
     }
+    
     interface B
     {
         void p2();
     }
+    
     class my:B,A
     {
         public void p1()
