@@ -15,6 +15,8 @@ namespace myprogram
             int[] store = new int[10000];
             
 
+            
+            
             for (int i = 0; i < store.Length; i++)
             {
                 store[i] = r.Next(1, 100);
