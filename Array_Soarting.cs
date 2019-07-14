@@ -35,6 +35,7 @@ namespace myprogram
                 Console.WriteLine(store[i]);
             }
             
+            
 
 
         }
