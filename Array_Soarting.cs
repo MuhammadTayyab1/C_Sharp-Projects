@@ -9,6 +9,7 @@ namespace myprogram
     class Program
     {
         
+        
         static void Main(string[] args)
         {
             Random r = new Random();
