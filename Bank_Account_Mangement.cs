@@ -21,6 +21,7 @@ namespace ConsoleApplication283
                 Console.WriteLine("Enter account number");
                 int acno = int.Parse(Console.ReadLine());
 
+                
                 if (acno < 0 || acno < 1000)
                 {
                     continue;
