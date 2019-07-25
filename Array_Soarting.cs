@@ -13,6 +13,7 @@ namespace myprogram
         static void Main(string[] args)
         {
             
+            
             Random r = new Random();
 
             int[] store = new int[1000];
