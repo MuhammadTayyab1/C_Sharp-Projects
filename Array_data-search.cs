@@ -30,6 +30,7 @@ namespace myprogram
             int check = Convert.ToInt32(Console.ReadLine());
 
             
+            
             for (int i = 0; i < store.Length; i++)
             {
                 if(store[i]==check)
