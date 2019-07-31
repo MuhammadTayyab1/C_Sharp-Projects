@@ -12,6 +12,7 @@ namespace ConsoleApplication133
         {
             Console.WriteLine("Press 1 and 2 for shoot");
             Console.WriteLine("Press enter to continue");
+            Console.WriteLine("________________________");
             Console.ReadLine();
             Console.Clear();
             int score = 0;
