@@ -21,6 +21,7 @@ namespace myprogram
             
             
             
+            
             for (int i = 0; i < store.Length; i++)
             {
                 
