@@ -10,6 +10,7 @@ namespace car_race_game
     {
         static void Main(string[] args)
         {
+            
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\n");
             Console.WriteLine("\n");
