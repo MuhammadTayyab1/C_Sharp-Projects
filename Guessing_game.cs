@@ -22,7 +22,7 @@ namespace ConsoleApplication288
         {
            
             
-
+           // infinite loop
             for (; ; )
             {
                 Console.WriteLine("enter number");
