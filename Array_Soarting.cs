@@ -13,7 +13,7 @@ namespace myprogram
         static void Main(string[] args)
         {
             
-            
+            // Generate random numbers 
             Random r = new Random();
 
             int[] store = new int[1000];
