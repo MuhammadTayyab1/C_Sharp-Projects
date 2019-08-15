@@ -8,10 +8,12 @@ namespace ConsoleApplication283
 {
     class BankAccount
     {
+        
         private int accnum;
         private float accbal;
         static float annualinterest = 0.03f;
 
+        
         public void  enterAccountData(out int an,out float bal)
         {
             an = 0;  bal = 0;
