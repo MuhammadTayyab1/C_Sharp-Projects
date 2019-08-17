@@ -19,6 +19,7 @@ namespace myprogram
             int[] store = new int[1000];
 
             
+            
          
             
             // loop reads store array
