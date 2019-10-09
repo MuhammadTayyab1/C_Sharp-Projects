@@ -18,7 +18,7 @@ namespace Ds_class_25
         Node Start;
         int length = 0;
 
-        public void enque(int value)
+        public void insert(int value)
         {
             if (Start == null)
             {
@@ -45,7 +45,8 @@ namespace Ds_class_25
                 }
             }
         }
-        public int show(int index)
+
+        public int get(int index)
         {
             Curr = Start;
             int maxlength = 0;
@@ -65,7 +66,6 @@ namespace Ds_class_25
             if (maxlength < index)
             {
                 return 0;
-
             }
             else
             {
@@ -73,38 +73,6 @@ namespace Ds_class_25
             }
 
             return Curr.value;
-        }
-        public int deque(int index)
-        {
-            Curr = Start;
-            int maxlength = 0;
-
-            for (int i = 0; i < index; i++)
-            {
-                if (Curr.next != null)
-                {
-                    Curr = Curr.next;
-                    maxlength++;
-                }
-                else
-                {
-                    break;
-                }
-            }
-            if (maxlength < index)
-            {
-                return 0;
-
-            }
-            else
-            {
-                delete(index);
-                return Curr.value;
-
-            }
-            delete(index);
-            return Curr.value;
-
         }
 
         public void delete(int ind)
@@ -154,37 +122,27 @@ namespace Ds_class_25
         {
             Merilist obj = new Merilist();
             // add
-            obj.enque(90);
-            obj.enque(100);
-            obj.enque(101);
-            obj.enque(102);
-            obj.enque(103);
+            obj.insert(90);
+            obj.insert(100);
+            obj.insert(101);
+            obj.insert(102);
+            obj.insert(103);
 
             for (int i = 0; i < 5; i++)
             {
-                int hold9 = obj.show(i);
-                Console.WriteLine(hold9);
+                int hold = obj.get(i);
+                Console.WriteLine(hold);
             }
             Console.WriteLine("======================");
 
-           
+            // del
+            obj.delete(3);
 
-            int hold = obj.deque(0);
-            Console.WriteLine(hold);
-
-            int hold1 = obj.deque(0);
-            Console.WriteLine(hold1);
-
-
-            Console.WriteLine("=============================");
-
+            // View
             for (int i = 0; i < 5; i++)
             {
-                int hold0 = obj.show(i);
-                if (hold0 != 0)
-                {
-                    Console.WriteLine(hold0);
-                }
+                int hold = obj.get(i);
+                Console.WriteLine(hold);
             }
 
         }
