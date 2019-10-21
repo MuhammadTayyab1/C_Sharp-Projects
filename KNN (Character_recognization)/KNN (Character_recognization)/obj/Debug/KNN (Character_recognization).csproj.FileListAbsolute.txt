@@ -1,0 +1,6 @@
+c:\users\tayyab\documents\visual studio 2013\Projects\KNN (Character_recognization)\KNN (Character_recognization)\bin\Debug\KNN (Character_recognization).exe.config
+c:\users\tayyab\documents\visual studio 2013\Projects\KNN (Character_recognization)\KNN (Character_recognization)\bin\Debug\KNN (Character_recognization).exe
+c:\users\tayyab\documents\visual studio 2013\Projects\KNN (Character_recognization)\KNN (Character_recognization)\bin\Debug\KNN (Character_recognization).pdb
+c:\users\tayyab\documents\visual studio 2013\Projects\KNN (Character_recognization)\KNN (Character_recognization)\obj\Debug\KNN (Character_recognization).csprojResolveAssemblyReference.cache
+c:\users\tayyab\documents\visual studio 2013\Projects\KNN (Character_recognization)\KNN (Character_recognization)\obj\Debug\KNN (Character_recognization).exe
+c:\users\tayyab\documents\visual studio 2013\Projects\KNN (Character_recognization)\KNN (Character_recognization)\obj\Debug\KNN (Character_recognization).pdb
